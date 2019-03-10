@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: com.fabridinapoli
+---
+testFramework: spek
+sourceLanguage: kotlin
