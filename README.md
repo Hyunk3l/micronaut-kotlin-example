@@ -12,6 +12,13 @@ Open terminal and run:
 curl -i http://localhost:8080/hello
 ```
 
+## How to run tests
+In terminal:
+```
+./gradlew test
+```
+
+
 ## Utils
 How to install Micronaut CLI in your Mac:
 ```
