@@ -1,4 +1,4 @@
-FROM openjdk:8u171-alpine3.7
-RUN apk --no-cache add curl
-COPY build/libs/*-all.jar micronautexample.jar
-CMD java ${JAVA_OPTS} -jar micronautexample.jar
+FROM openjdk:14-alpine
+COPY build/libs/demo-*-all.jar demo.jar
+EXPOSE 8080
+CMD ["java", "-Dcom.sun.management.jmxremote", "-Xmx128m", "-jar", "demo.jar"]

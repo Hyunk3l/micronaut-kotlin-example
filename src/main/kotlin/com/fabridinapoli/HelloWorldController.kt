@@ -9,8 +9,10 @@ import io.micronaut.http.annotation.Produces
 class HelloWorldController {
 
     @Get("/")
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     fun index(): String {
-        return "Hello World"
+        return """
+            {"message": "Hello World"}
+        """.trimIndent()
     }
 }
